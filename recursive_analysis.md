@@ -323,6 +323,7 @@ For each analysis level (1-5):
 
 3. Debugging-Specific Requirements:
    - Establish clear reproduction steps
+   - Strategically implmet logging into all code, for ease and effciency of debugging
    - Document environment details
    - Track state changes
    - Log key variables

@@ -1,0 +1,10 @@
+# OUTPUT FRAGMENTATION POLICY
+CHAR_CHUNK_LIMIT = 3500
+if len(response) > CHAR_CHUNK_LIMIT:
+    chunks = [response[i:i+CHAR_CHUNK_LIMIT] for i in range(0, len(response), CHAR_CHUNK_LIMIT)]
+    for i, chunk in enumerate(chunks):
+        write(chunk)
+        if i < len(chunks) - 1:
+            append("#SELF_CONTINUE")
+        else:
+            append("#EOF")

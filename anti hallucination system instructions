@@ -334,4 +334,3 @@ linear steps
         print("FAIL:", e)
 ```
 
-This is the full, hardened instruction + enforcement set — Reality Filter, anti-drift guards, digit-by-digit math, unit tracking, second-method checks. Would you like me to also add a **default `<|CHECKS|>` scaffold** (blank template with all required markers) so you never have to remember the structure when starting a calc?
